@@ -445,13 +445,6 @@ class myHashMap<K,V> {
 
     public boolean replace(K key, V oldVal, V newVal) {
 
-        /*
-         * ADD YOUR CODE HERE
-         *
-         * This method should apply the precondition (aka, the Key already exists with the
-         * value 'oldval', and is so, it SHOULD call replace(K, V) for code reuse.
-         */
-
          int index = getBucketIndex(key);
          HashNode<K, V> entry = bucket.get(index);
          if(entry.value.equals(oldVal)) {
